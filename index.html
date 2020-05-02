@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha - Cadastre-se</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    
+    <div class="calculator">
+        <!-- VISOR -->
+        <input type="text" id="results" placeholder="0" name="results" disabled> 
+        <!-- APAGAR -->
+        <input type="button" value=" C " id="c-all" onclick="del()">
+        <!-- NÚMERO E PONTO -->
+        <input type="button" value="7" class="number seven" onclick="seven()">
+        <input type="button" value="8" class="number eight" onclick="eight()">
+        <input type="button" value="9" class="number nine" onclick="nine()">
+        <input type="button" value="4" class="number four" onclick="four()">
+        <input type="button" value="5" class="number five" onclick="five()">
+        <input type="button" value="6" class="number six" onclick="six()">
+        <input type="button" value="1" class="number one" onclick="one()">
+        <input type="button" value="2" class="number two" onclick="two()">
+        <input type="button" value="3" class="number three" onclick="three()">
+        <input type="button" value="0" class="number zero" onclick="zero()">
+        <input type="button" value="." class="number float" onclick="float()">
+        <!-- OPERAÇÕES (INCLUINDO =) -->
+        <input type="button" value="/" class="op division" onclick="division()">
+        <input type="button" value="x" class="op multiplication" onclick="multiplication()">
+        <input type="button" value="-" class="op subtraction" onclick="subtraction()">
+        <input type="button" value="+" class="op addition" onclick="addition()">
+        <input type="button" value="=" class="op equal" onclick="equalF()">
+    </div>
 </body>
 </html>

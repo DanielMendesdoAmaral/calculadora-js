@@ -1,0 +1,142 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    font-weight: 600;
+}
+
+/* CALCULADORA */
+.calculator {
+    width: 30vw;
+    height: 70vh;
+    background-color: grey;
+    border-radius: 30px;
+    margin: 12.5vh auto;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 5vh 10vh 2.5vh 5vh 2.5vh 10vh 10vh 10vh 10vh 5vh;
+    grid-template-areas: ". . . . . . . ."
+                         ". r r r r r r ."
+                         ". . . . . . . ."
+                         ". . . . . . c ."
+                         ". . . . . . . ."
+                         ". seven seven eight nine division division ."
+                         ". four four five six multiplication multiplication ."
+                         ". one one two three subtraction subtraction ."
+                         ". float float zero equal addition addition ."
+                         ". . . . . . . .";
+}
+
+/*VISOR*/
+#results {
+    background-color: rgb(97, 97, 58);
+    border: solid 3px black;
+    border-radius: 5px;
+    grid-area: r;
+    color: black;
+    text-align: right;
+    font-family: Pixeled;
+    font-size: 16px;
+}
+
+/*APAGAR*/
+#c-all {
+    grid-area: c;
+    background-color: hsl(0, 100%, 27%);
+    color: rgb(177, 177, 177);
+}
+
+/*PRIMEIRA LINHA*/
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.division {
+    grid-area: division;
+    color: darkgoldenrod;
+}
+
+/*SEGUNDA LINHA*/
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.multiplication {
+    grid-area: multiplication;
+    color: darkgoldenrod;
+}
+
+/*TERCEIRA LINHA*/
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.subtraction {
+    grid-area: subtraction;
+    color: darkgoldenrod;
+}
+
+/*QUARTA LINHA*/
+.float {
+    grid-area: float;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equal {
+    grid-area: equal;
+    color: darkcyan;
+}
+
+.addition {
+    grid-area: addition;
+    color: darkgoldenrod;
+}
+
+/*CONFIGURAÇÕES GERAIS DOS BOTÕES*/
+input {
+    color: black;
+    font-size: 25px;
+    border: none;
+    border-bottom: outset 2.5px rgba(0, 0, 0, 0.5);
+    border-right: outset 2.5px rgba(0, 0, 0, 0.5);
+    color: rgb(177, 177, 177);
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    transition: 0.025s;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-top: outset 2.5px rgba(0, 0, 0, 0.5);
+    border-left: outset 2.5px rgba(0, 0, 0, 0.5);
+    transition: 0.025;
+}
